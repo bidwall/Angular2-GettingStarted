@@ -7,5 +7,5 @@ import { ProductService } from './products/product.service';
     providers: [ProductService]
 })
 export class AppComponent { 
-    pageTitle: string = 'Two Towers Product Management'
+    pageTitle: string = 'Product Management'
 }
