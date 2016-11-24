@@ -21,6 +21,10 @@ export class ProductService {
             .catch(this.handleError);
     }
 
+    getProduct(id: number) {
+        return this.getProducts().map((products: IProduct[]) => products.find(p => p.productId === id));
+    }
+
     private handleError(error: Response) {
         // in a real world app, we may send the server to some remote logging infrastructure
         // instead of just logging it to the console
